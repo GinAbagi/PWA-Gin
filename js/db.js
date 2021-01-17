@@ -21,5 +21,23 @@ db.collection('recipes').onSnapshot((snapshot) => {
       if(change.type === 'removed'){
           //remove the document data from the web page
       }
-    })
+    });
+});
+
+// add new recipe
+const from = document.querySelector('form');
+form.addEventListener('submit', evt => {
+    evt.preventDefault();
+
+    const recipe = {
+        title: form.title.value, 
+        ingredients = form.ingredients.value
+    };
+
+    db.collection('recipes').add(recipe)
+        .catch(err => console.log(err));
+
+    form.title.value = '';
+    form.ingredients.value = '';
+
 })
