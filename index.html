@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +16,7 @@
   <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
   <meta name="theme-color" content="#FFE1C4">
 </head>
+
 <body class="grey lighten-4">
 
   <!-- top nav -->
@@ -26,23 +28,25 @@
       </span>
     </div>
   </nav>
-    
+
   <!-- side nav -->
   <ul id="side-menu" class="sidenav side-menu">
     <li><a class="subheader">MoodFood</a></li>
     <li><a href="/" class="waves-effect">Home</a></li>
     <li><a href="/pages/about.html" class="waves-effect">About</a></li>
-    <li><div class="divider"></div></li>
+    <li>
+      <div class="divider"></div>
+    </li>
     <li><a href="/pages/contact.html" class="waves-effect">
-      <i class="material-icons">mail_outline</i>Contact</a>
+        <i class="material-icons">mail_outline</i>Contact</a>
     </li>
   </ul>
 
-   <!-- recipes -->
-   <div class="recipes container grey-text text-darken-1">
+  <!-- recipes -->
+  <div class="recipes container grey-text text-darken-1">
     <h6 class="center">MoodFood Recipes</h6>
- 
-    </div>
+
+  </div>
 
   <div class="center">
     <a class="btn-floating btn-small btn-large add-btn sidenav-trigger" data-target="side-form">
@@ -50,47 +54,48 @@
     </a>
   </div>
 
-    <!-- add recipe side nav -->
-    <div id="side-form" class="sidenav side-form">
-        <form class="add-recipe container section">
-          <h6 >New Recipe</h6>
-          <div class="divider"></div>
-          <div class="input-field">
-            <input placeholder="e.g. Ninja soup" id="title" type="text" class="validate">
-            <label for="title">Recipe Title</label>
-          </div>
-          <div class="input-field">
-            <input placeholder="e.g. Tofu, mushroom, garlic" id="ingredients" type="text" class="validate">
-            <label for="ingredients">Ingredients</label>
-          </div>
-          <div class="input-field center">
-            <button class="btn-small">Add</button>
-          </div>
-        </form>
+  <!-- add recipe side nav -->
+  <div id="side-form" class="sidenav side-form">
+    <form class="add-recipe container section">
+      <h6>New Recipe</h6>
+      <div class="divider"></div>
+      <div class="input-field">
+        <input placeholder="e.g. Ninja soup" id="title" type="text" class="validate">
+        <label for="title">Recipe Title</label>
       </div>
-    
+      <div class="input-field">
+        <input placeholder="e.g. Tofu, mushroom, garlic" id="ingredients" type="text" class="validate">
+        <label for="ingredients">Ingredients</label>
+      </div>
+      <div class="input-field center">
+        <button class="btn-small">Add</button>
+      </div>
+    </form>
+  </div>
 
-          <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-firestore.js"></script>
 
-    <script>
-      // Your web app's Firebase configuration
-      var firebaseConfig = {
-        apiKey: "AIzaSyBJ4SnoKPCSBeetp6K_FSj53_ACeDA6Ym0",
-        authDomain: "mood-food-pwa.firebaseapp.com",
-        projectId: "mood-food-pwa",
-        storageBucket: "mood-food-pwa.appspot.com",
-        messagingSenderId: "952381704211",
-        appId: "1:952381704211:web:91bf5b5a8231fda44f17e6"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      const db = firebase.firestore();
-    </script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-firestore.js"></script>
 
-      <script src="/js/app.js"></script>
-      <script src="/js/db.js"></script>
-      <script src="/js/ui.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBJ4SnoKPCSBeetp6K_FSj53_ACeDA6Ym0",
+      authDomain: "mood-food-pwa.firebaseapp.com",
+      projectId: "mood-food-pwa",
+      storageBucket: "mood-food-pwa.appspot.com",
+      messagingSenderId: "952381704211",
+      appId: "1:952381704211:web:91bf5b5a8231fda44f17e6"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+  </script>
+
+  <script src="/js/app.js"></script>
+  <script src="/js/db.js"></script>
+  <script src="/js/ui.js"></script>
 </body>
+
 </html>
