@@ -15,7 +15,7 @@
 
 > **MoodFood Progressive Web App**
 
-Deze app is een receptenlijst applicatie waarbij je recepten kan toevoegen en verwijderen. De Progressive Web App is gemaakt met HTML, CSS en JavaScript. De recepten worden opgeslagen op een Firebase database en wordt gehoord op Firebase Hosting.
+Deze app is een receptenlijst applicatie waarbij je recepten kan toevoegen en verwijderen. De Progressive Web App is gemaakt met HTML, CSS en JavaScript. De recepten worden opgeslagen op een Firebase database en wordt gehost op Firebase Hosting.
 
 ---
 
